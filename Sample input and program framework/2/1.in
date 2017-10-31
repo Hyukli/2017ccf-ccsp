@@ -1,0 +1,4 @@
+(define y 10)
+(define f (lambda (x y) (+ x ((lambda (x) (* x y)) y))))
+(f 1 2)
+y

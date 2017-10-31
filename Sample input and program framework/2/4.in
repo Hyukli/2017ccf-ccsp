@@ -1,0 +1,6 @@
+(define fun1 (lambda (x) (cond ((eq? x 0) 1) (True (fun2 (- x 1))))))
+(define fun2 (lambda (x) (cond ((eq? x 0) 2) (True (fun1 (/ x 2))))))
+(fun1 2)
+(fun2 2)
+(fun1 5)
+(fun2 5)

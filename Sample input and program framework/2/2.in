@@ -1,0 +1,5 @@
+(define y 10)
+(define sqr+y (lambda (x) (+ y (* x x))))
+(define f (lambda (x y) (sqr+y x)))
+(sqr+y 5)
+(f 5 1)

@@ -1,0 +1,6 @@
+(define fact (lambda (n) (cond ((eq? n 1) 1) (True (* n (fact (- n 1)))))))
+(fact 1)
+(fact 5)
+(fact 10)
+(define sum (lambda (n) (cond ((eq? n 1) 1) (True (+ n (sum (- n 1)))))))
+(sum 50)
